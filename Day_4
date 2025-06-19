@@ -1,0 +1,154 @@
+# 1. Union de Cadenas
+p1= "Thirty"
+p2= "Days"
+p3= "Of"
+p4= "Python"
+union=  p1  + " " +  p2  + " " +  p3  + " " +  p4 
+print (union)
+
+# 2.Union cadena 
+cad1= "Coding"
+cad2= "for"
+cad3= "all"
+union_cad= cad1 + " " + cad2 + " " + cad3
+print(union_cad)
+
+# 3.Declaracion del variable
+company= "Coding for all"
+
+# 4.Impresion de variable
+print(company)
+
+# 5.Longitud de cadena 
+print("La longitud de la variable es de: " , len(company))
+
+# 6.Conversion a mayusculas
+print(company.upper())
+
+# 7.Conversion a minusculas
+print(company.lower())
+
+# 8.Uso de metodos
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+
+# 9.Cortar palabra
+print(company[7:])
+
+# 10.Revision de la palabra "Coding for all" dentro del texto
+print("Se encuentran las palabras (Coding for all) dentro del texto?")
+print("Coding for all" in company)
+
+# 11.Remplazar palabras
+print("Texto a modificar: ", "Python for all")
+print("Remplazar (Codig) por (Python)")
+print(company.replace("Coding","Python"))
+
+# 12.Remplazo de multiples palabras
+remplazo= "Coding for all"
+print("Texto a modificar: " ,"Coding for all")
+print("Remplazar (all) por (everyone)")
+print(remplazo.replace("all" , "Everyone"))
+
+# 13.Trozar texto
+print(remplazo.split())
+
+# 14.Division por comas
+dividir="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(dividir.split(" ,"))
+
+# 15.Primer caracter del texto
+print(remplazo[0])
+
+# 16.Ultimo caracter del texto
+print(remplazo[-1])
+
+# 17.Caracter en la posicion "10"
+print(remplazo[10])
+
+# 18.Acronimo de texto
+texto="Python for Everyone"
+print("Acronimo de Python for Everyone")
+acro1=(texto[0])
+acro2=(texto[7])
+acro3=(texto[11])
+acrototal= acro1 + acro2 + acro3
+print(acrototal.upper ())
+
+# 19.Acronimo de texto
+print("Acronimo de Coding for all")
+acronimo1=(remplazo[0])
+acronimo2=(remplazo[7])
+acronimo3=(remplazo[11])
+acronimototal= acronimo1 + acronimo2 + acronimo3
+print(acronimototal.upper ())
+
+# 20.Ubicacion de cierto caracter en especifico "C"
+print(remplazo.index("C"))
+
+# 21.Ubicacion de cierto caracter en especifico "f"
+print(remplazo.index("f"))
+
+# 22.Ubicacion de cierto caracter en especifico "l"
+frase="Coding for all people"
+print(remplazo.rfind("l"))
+
+# 23.Ubicacion de cierta frase en especifico "because"
+frase1="You cannot end a sentence with because because because is a conjunction"
+print(frase1.index("because"))
+
+# 24.Ubicacion de cierta frase en especifico "because"
+print(frase1.rindex("because"))
+
+# 25.Coordenada de las palabras "because"
+frase2="ou cannot end a sentence with because because because is a conjunction"
+print(frase2[30:54])
+
+# 26.Primera ubicaion de cierta palabra "because"
+print(frase2.index("because"))
+
+# 27.Ultima ubicacion de cierta palabra "because"
+print(frase2.rindex("because"))
+
+# 28.Verdad/Falso sobre una variable
+print(remplazo.startswith("Coding"))
+
+# 29.Verdad/Falso
+print(remplazo.endswith("Coding"))
+
+# 30.Eliminar los espacios
+espacios="    Coding For All   "
+print(espacios.strip())
+
+# 31. ¿Cuál de estas variables retorna True con el método isidentifier()?
+print("30DiasDePython".isidentifier())         # False (empieza con número)
+print("treinta_dias_de_python".isidentifier())  # True
+
+# 32. Unir una lista con un string ' # '
+librerias = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+librerias_unidas = ' # '.join(librerias)
+print(librerias_unidas)
+
+# 33. Usar la secuencia de escape de nueva línea
+print("Estoy disfrutando este reto.\nSolo me pregunto qué sigue.")
+
+# 34. Usar la secuencia de escape de tabulación
+print("Nombre\t\tEdad\tPaís\tCiudad")
+print("Asabeneh\t250\tFinlandia\tHelsinki")
+
+# 35. Usar formato de cadena para mostrar el área de un círculo
+radio = 10
+area = 3.14 * radio ** 2
+print("El area de un circulo con radio {} es {:.0f} metros cuadrados.".format(radio, area))
+
+# 36. Operaciones aritméticas usando formato de cadena
+a = 8
+b = 6
+print("{} + {} = {}".format(a, b, a + b))
+print("{} - {} = {}".format(a, b, a - b))
+print("{} * {} = {}".format(a, b, a * b))
+print("{} / {} = {:.2f}".format(a, b, a / b))
+print("{} % {} = {}".format(a, b, a % b))
+print("{} // {} = {}".format(a, b, a // b))
+print("{} ** {} = {}".format(a, b, a ** b))
